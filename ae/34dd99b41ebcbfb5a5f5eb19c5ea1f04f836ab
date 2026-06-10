@@ -1,0 +1,22 @@
+README.md
+  s_424cbaf440f3a7::t_74ff29cd4e7398 215
+scripts/cleanup.py
+  s_424cbaf440f3a7::t_aaf13239a87d7a 72,74-77,81,84,91-95,108
+  s_424cbaf440f3a7::t_f9910527a857e9 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "ae34dd99b41ebcbfb5a5f5eb19c5ea1f04f836ab",
+  "prompts": {},
+  "sessions": {
+    "s_424cbaf440f3a7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "42d914b0-e83d-4cbd-876d-43166c67a82f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Stephen Chu <stephen.chu@langchain.dev>"
+    }
+  }
+}
