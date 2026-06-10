@@ -29,7 +29,9 @@ def _model_id() -> str:
 
 def build_agent():
     return create_agent(
-        model=ChatAnthropic(model=_model_id(), max_tokens=300),
+        # 300 truncated almost every non-trivial response mid-sentence;
+        # code-bearing answers in particular need more headroom.
+        model=ChatAnthropic(model=_model_id(), max_tokens=4096),
         tools=TOOLS,
         system_prompt=SYSTEM_PROMPT,
         # FilesystemMiddleware exposes ls/read_file/etc. backed by Context Hub.
